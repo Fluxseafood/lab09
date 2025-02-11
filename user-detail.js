@@ -12,6 +12,8 @@ if (userId) {
                         <p><strong>เว็บไซต์<br></strong> <a href="http://${user.website}" target="_blank">${user.website}</a></p>
                         <p><strong>ที่อยู่<br></strong> ${user.address.street}, ${user.address.city}</p>
                         <p><strong>บริษัท<br></strong> ${user.company.name}</p>
+                        <button id="view-posts" class="view-posts-btn"><a href="user-posts.html?id=${user.id}">ดูโพสต์ทั้งหมด</a></button>
+ 
                   `;
            });
 }
