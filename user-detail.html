@@ -4,19 +4,20 @@
 <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>โพสต์ของผู้ใช้</title>
+      <title>รายละเอียดผู้ใช้</title>
       <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
       <div class="container">
-            <a href="#" class="back-button" onclick="history.back()">← กลับ</a>
-            <h1 id="posts-title">โพสต์ของ <span id="user-name"></span></h1>
-            <div id="posts-list" class="posts-list">
-                  <!-- โพสต์จะถูกเพิ่มที่นี่ด้วย JavaScript -->
+            <a href="index.html" class="back-button">← กลับ</a>
+            <div id="user-detail" class="user-detail">
+                  <!-- รายละเอียดผู้ใช้จะถูกเพิ่มที่นี่ด้วย JavaScript -->
+                  <p id="user-detail"></p>
+            </div>
+            <div class="button-container">
+                  <button id="view-posts" class="view-posts-btn">ดูโพสต์ทั้งหมด</button>
             </div>
       </div>
-      <script src="user-posts.js"></script>
-</body>
-
-</html>
+      <script src="user-detail.js"></script>
+</body
