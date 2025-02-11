@@ -46,7 +46,7 @@ function showComments(postId, button) {
         commentsContainer.innerHTML = comments
           .map(
             (comment) => `
-                                    <div class="comment">
+                                    <div class="comment container-comment">
                                         <strong>${comment.email}</strong><p>${comment.body}</p>
                                     </div>
                                 `
