@@ -6,9 +6,7 @@ if (userId) {
   fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
     .then((response) => response.json())
     .then((user) => {
-      document.getElementById(
-        "user-name"
-      ).innerHTML = `<span>${user.name}</span>`;
+      document.getElementById("user-name").innerHTML = `<span>${user.name}</span>`;
     });
 
   fetch(`https://jsonplaceholder.typicode.com/posts?userId=${userId}`)
